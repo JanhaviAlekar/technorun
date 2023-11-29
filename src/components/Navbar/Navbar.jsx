@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './navbar.module.css'; // Import CSS module
 import logo from '../../assets/2.png';
@@ -7,14 +7,27 @@ import { ReactComponent as Hamburger } from '../../assets/fast-food-burger-svgre
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
+  const [navbarScroll, setNavbarScroll] = useState(false);
 
+  const changeBackground = () => {
+    console.log(window.scrollY)
+    if (window.scrollY >= 66) {
+      setNavbarScroll(true)
+    } else {
+      setNavbarScroll(false)
+    }
+  }
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
-
+  useEffect(() => {
+    changeBackground()
+    // adding the event when scroll change background
+    window.addEventListener("scroll", changeBackground)
+  })
   return (
     <>
-      <nav className={styles.navbar}>
+      <nav className={navbarScroll ? `${styles.navbar} ${styles.active}` : `${styles.navbar}`}>
         <div className='grad-bar' />
         <div className={styles.container}>
           <div className={styles.logo}>

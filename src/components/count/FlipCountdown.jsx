@@ -1,63 +1,46 @@
-import React, { useState, useEffect } from 'react';
-import styles from './flipcount.module.css';
+import React from 'react';
+import DateTimeDisplay from './DateTimeDisplay.jsx';
+import { useCountdown } from '../../hooks/useCountDown';
 
-const FlipCountdown = ({ targetDate }) => {
-  const [days, setDays] = useState(0);
-  const [hours, setHours] = useState(0);
-  const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const now = new Date();
-      const timeToTarget = targetDate - now;
-
-      const days = Math.floor(timeToTarget / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((timeToTarget % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((timeToTarget % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((timeToTarget % (1000 * 60)) / 1000);
-
-      setDays(days);
-      setHours(hours);
-      setMinutes(minutes);
-      setSeconds(seconds);
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, [targetDate]);
-
+const ExpiredNotice = () => {
   return (
-    <div className={styles.flipCountdown}>
-      <div className={styles.flipContainer}>
-        <div className={styles.flip}>
-          <div className={styles.front}>{days}</div>
-          <div className={styles.back}>{days}</div>
+    <div className="expired-notice">
+      <span>Expired!!!</span>
+          </div>
+  );
+};
+
+const ShowCounter = ({ days, hours, minutes, seconds }) => {
+  return (
+    <div className="show-counter">
+      <div className='countdown-link'>
+        <DateTimeDisplay value={days} type={'Days'} isDanger={days <= 3} />
+        <p>:</p>
+        <DateTimeDisplay value={hours} type={'Hours'} isDanger={false} />
+        <p>:</p>
+        <DateTimeDisplay value={minutes} type={'Mins'} isDanger={false} />
+        <p>:</p>
+        <DateTimeDisplay value={seconds} type={'Seconds'} isDanger={false} />
         </div>
-        <p>Days</p>
-      </div>
-      <div className={styles.flipContainer}>
-        <div className={styles.flip}>
-          <div className={styles.front}>{hours}</div>
-          <div className={styles.back}>{hours}</div>
-        </div>
-        <p>Hours</p>
-      </div>
-      <div className={styles.flipContainer}>
-        <div className={styles.flip}>
-          <div className={styles.front}>{minutes}</div>
-          <div className={styles.back}>{minutes}</div>
-        </div>
-        <p>Minutes</p>
-      </div>
-      <div className={styles.flipContainer}>
-        <div className={styles.flip}>
-          <div className={styles.front}>{seconds}</div>
-          <div className={styles.back}>{seconds}</div>
-        </div>
-        <p>Seconds</p>
-      </div>
     </div>
   );
 };
 
-export default FlipCountdown;
+const CountdownTimer = ({ targetDate }) => {
+  const [days, hours, minutes, seconds] = useCountdown(targetDate);
+
+  if (days + hours + minutes + seconds <= 0) {
+    return <ExpiredNotice />;
+  } else {
+    return (
+      <ShowCounter
+        days={days}
+        hours={hours}
+        minutes={minutes}
+        seconds={seconds}
+      />
+    );
+  }
+};
+
+export default CountdownTimer;
