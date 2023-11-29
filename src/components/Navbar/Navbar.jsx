@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './navbar.module.css'; // Import CSS module
-import logo from '../../assets/logo.png';
+import logo from '../../assets/2.png';
 import { ReactComponent as Hamburger } from '../../assets/fast-food-burger-svgrepo-com.svg';
-import Hero from '../Hero/Hero';
+
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -20,6 +20,7 @@ const Navbar = () => {
           <div className={styles.logo}>
             <img src={logo} alt="Logo" />
           </div>
+          
           <div className={styles['menu-icon']} onClick={handleShowNavbar}>
             <Hamburger className='ham' />
           </div>
@@ -44,7 +45,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <Hero />
+      
     </>
   );
 };

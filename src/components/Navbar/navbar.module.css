@@ -24,14 +24,13 @@ body {
   background-color: #fcfcfc;
   position: fixed;
   box-shadow: 5px 2px 2px #ccc ;
-
 }
 
 .logo {
   order: 1;
 }
 .logo img {
-  width: 55px; /* Adjust the logo size as needed */
+  width: 150px; /* Adjust the logo size as needed */
 }
 
 .menu-icon {
