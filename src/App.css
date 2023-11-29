@@ -219,7 +219,7 @@ animation: gradbar 15s ease infinite;
   }
 
   .grid-container{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 /*card */
@@ -307,6 +307,6 @@ animation: gradbar 15s ease infinite;
 
 @media (max-width: 320px) {
   .grid-container{
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, fr);
   }
 }
