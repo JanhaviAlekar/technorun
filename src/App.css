@@ -310,3 +310,121 @@ animation: gradbar 15s ease infinite;
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.expired-notice {
+  text-align: center;;
+  margin: 0.5rem;
+}
+
+.expired-notice > span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: red;
+}
+
+.expired-notice > p {
+  font-size: 1.5rem;
+}
+
+.show-counter {
+  padding: 0.5rem;
+  position: absolute;
+  top: 300px;
+  left: 100px;
+}
+
+.show-counter .countdown-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding: 0.5rem;  
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  background:  rgb(0,0,0,0.5);
+}
+
+.show-counter .countdown {
+  line-height: 1.25rem;
+  padding: 0 0.75rem 0 0.75rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.show-counter .countdown.danger {
+  color: #000;
+}
+
+.show-counter .countdown > p {
+  margin: 0;
+}
+
+.show-counter .countdown > span {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+@media (max-width: 768px) {
+  .show-counter{
+    position: absolute;
+    top:120%;
+    left:0px;
+
+  }
+}
+
+.card-s{
+  margin:50px;  
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  display: flex;
+  width: 200px;
+  height: 230px;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+  padding: 40px 30px;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+.card-s-img{
+  margin-left: 15px;
+  width: 80%;
+  aspect-ratio: 1/1;
+  border-radius:50%;
+  object-fit: cover;
+  background: #E73C7E;
+  transition: 0.2s  ;
+  z-index: 1;
+}
+.card-s .textt{
+  z-index: 1 !important;
+}
+.card-s .textt h3{
+ margin-left: 40px;
+ margin-bottom: 0px;
+
+}
+.card-s .textt p{
+  margin-left: 5px;
+  margin-top: 0px;
+ 
+ }
+ 
+ .card-s:hover img{
+  margin-left: 0px;
+  position: absolute;
+  top:0%;
+  left:13.75%;
+  transform: translate(-13.75%);
+  height:100%;
+  width:250px;
+  border-radius: 0;
+  z-index: 1;
+ }
