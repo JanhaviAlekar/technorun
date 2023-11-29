@@ -3,14 +3,13 @@ import img1 from '../assets/homepage.jpg'
 export const HotelsCard = () =>{
     return (<>
      <div className='col-md-9 text-center'>
-                    <h4 className='text-head'>All products</h4>
                     <div className=' row row-cols-1 row-cols-md-3 g-4 '>
                             <div className="grid-container">
                             <div className="grid-item"><div className="container-card">
                                     <div className="card">
                                         <div className="top-div">
                                             <div className="border">
-                                                <img src={img1}/>
+                                                <img src={img1} alt="hotel"/>
                                             </div>
                                         </div>
                                         <div className="bottom-div">
@@ -26,7 +25,7 @@ export const HotelsCard = () =>{
                                     <div className="card">
                                         <div className="top-div">
                                             <div className="border">
-                                                <img src={img1}/>
+                                                <img src={img1} alt="hotel"/>
                                             </div>
                                         </div>
                                         <div className="bottom-div">
@@ -42,7 +41,7 @@ export const HotelsCard = () =>{
                                     <div className="card">
                                         <div className="top-div">
                                             <div className="border">
-                                                <img src={img1}/>
+                                                <img src={img1} alt="hotel"/>
                                             </div>
                                         </div>
                                         <div className="bottom-div">
@@ -58,7 +57,7 @@ export const HotelsCard = () =>{
                                     <div className="card">
                                         <div className="top-div">
                                             <div className="border">
-                                                <img src={img1}/>
+                                                <img src={img1} alt="hotel"/>
                                             </div>
                                         </div>
                                         <div className="bottom-div">
@@ -74,7 +73,7 @@ export const HotelsCard = () =>{
                                     <div className="card">
                                         <div className="top-div">
                                             <div className="border">
-                                                <img src={img1}/>
+                                                <img src={img1} alt="hotel"/>
                                             </div>
                                         </div>
                                         <div className="bottom-div">
@@ -89,7 +88,7 @@ export const HotelsCard = () =>{
                                     <div className="card">
                                         <div className="top-div">
                                             <div className="border">
-                                                <img src={img1}/>
+                                                <img src={img1} alt="hotel"/>
                                             </div>
                                         </div>
                                         <div className="bottom-div">
@@ -104,7 +103,7 @@ export const HotelsCard = () =>{
                                     <div className="card">
                                         <div className="top-div">
                                             <div className="border">
-                                                <img src={img1}/>
+                                                <img src={img1} alt="hotel"/>
                                             </div>
                                         </div>
                                         <div className="bottom-div">

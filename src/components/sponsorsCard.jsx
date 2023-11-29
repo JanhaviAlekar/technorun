@@ -3,7 +3,7 @@ import React from "react";
 const SponsorsCard =() =>{
     return (
         <div class="card-s">
-        <img className="card-s-img" src="https://2k21.s3.amazonaws.com/images/Amitabh_Kant.jpeg"/>
+        <img className="card-s-img" src="https://2k21.s3.amazonaws.com/images/Amitabh_Kant.jpeg" alt="sponsor"/>
         <div className="textt">
             <h3>hello</h3>
             <p>heijwop jdjaskl</p>

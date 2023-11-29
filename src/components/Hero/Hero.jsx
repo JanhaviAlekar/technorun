@@ -35,7 +35,7 @@ const Hero = () => {
           Our latest generation of cars, trucks and SUVs comes loaded with
           upgrades that extend beyond the surface.
         </p>
-        <a href="#">Contact Us</a>
+        <a >Contact Us</a>
         <CountdownTimer targetDate={dateTimeAfterThreeDays}/>
       </div>
     </>

@@ -7,7 +7,6 @@ const AllSponsers =() =>{
             <div className="grid-item">
             <div className="container-card">
            <SponsorsCard/>
-           <SponsorsCard/>
             </div>
             </div>
             </div>
