@@ -28,13 +28,18 @@ body {
 }
 
 .logo {
+  order: 1;
+}
+.logo img {
+  width: 55px; /* Adjust the logo size as needed */
 }
 
 .menu-icon {
   display: none;
 }
 
-.nav-elements {
+.nav-elements{ 
+  order:2
 }
 
 .nav-elements ul {

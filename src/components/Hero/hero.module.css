@@ -57,4 +57,20 @@
      transform: scale(1.3);
    }
  }
- 
+
+@media (max-width: 599px) {
+  .banner-img{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  .banner-img img {
+    width: 100%; /* Make the image fill the container width */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Add border-radius for rounded corners, adjust as needed */
+    /* Add any additional styles for smaller screens */
+  }
+  
+}
+
