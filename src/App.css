@@ -8,7 +8,7 @@ html {
 
 body {
   /* min-height: 100vh; */
-  font-family: acumin-pro, system-ui, sans-serif;
+  font-family: 'Inter', sans-serif !important;
   margin: 0;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -45,7 +45,6 @@ animation: gradbar 15s ease infinite;
 }
 
 .footer__logo {
-  font-family: 'Pacifico', cursive;
   font-weight: 400;
   text-transform: lowercase;
   font-size: 1.5rem;
@@ -64,7 +63,8 @@ animation: gradbar 15s ease infinite;
 
 .footer address {
   font-style: normal;
-  color: #999;
+  font-weight: 400;
+  color: #2f2f2f
 }
 
 .footer__btn {
@@ -106,7 +106,8 @@ animation: gradbar 15s ease infinite;
 }
 
 .nav__ul a {
-  color: #999;
+  font-weight: 400;
+  color: #2f2f2f
 }
 
 .nav__ul--extra {
@@ -120,7 +121,8 @@ animation: gradbar 15s ease infinite;
 .legal {
   margin:0 10px;
     align-items: center;
-  color: #999;
+    font-weight: 400;
+    color: #8c8b8b
 }
   
 .legal__links {
@@ -237,7 +239,6 @@ animation: gradbar 15s ease infinite;
   background-color:#fff;
   border-radius:30px;
   /* border: 1px solid #ff545a; */
-  font-family: 'Poppins', sans-serif;
   overflow:hidden;
   position:relative;
   cursor:pointer;
@@ -325,14 +326,12 @@ animation: gradbar 15s ease infinite;
   font-size: 1.5rem;
 }
 
-.show-counter {
+/* .show-counter {
   padding: 0.5rem;
-  position: absolute;
-  top: 300px;
-  left: 100px;
-}
+} */
 
 .show-counter .countdown-link {
+  height: 60px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -369,12 +368,12 @@ animation: gradbar 15s ease infinite;
   line-height: 1rem;
 }
 @media (max-width: 768px) {
-  .show-counter{
+  /* .show-counter{
     position: absolute;
     top:120%;
     left:0px;
 
-  }
+  } */
 }
 
 .card-s{
@@ -391,6 +390,7 @@ animation: gradbar 15s ease infinite;
   padding: 40px 30px;
   border-radius: 10px;
   overflow: hidden;
+  background: #fff;;
 
 }
 .card-s-img{
@@ -405,18 +405,16 @@ animation: gradbar 15s ease infinite;
 }
 .card-s .textt{
   z-index: 1 !important;
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
 }
 .card-s .textt h3{
- margin-left: 40px;
+ color:#ff5454;
  margin-bottom: 0px;
-
 }
-.card-s .textt p{
-  margin-left: 5px;
-  margin-top: 0px;
- 
- }
- 
+
  .card-s:hover img{
   margin-left: 0px;
   position: absolute;
@@ -427,4 +425,69 @@ animation: gradbar 15s ease infinite;
   width:250px;
   border-radius: 0;
   z-index: 1;
+ }
+ .card-s:hover .textt{
+  color:#fff !important;
+ }
+ .register-s{
+  padding-inline: 100px;
+  padding-bottom: 35px;
+  border-bottom: 2px solid #ff5454;
+ }
+ .register-text{
+  text-align: center;
+ }
+ .heading{
+  font-weight: bolder;
+  font-size: 38px; 
+ }
+ .subHeading{
+  font-weight: 200;
+  font-size: 18px;
+ }
+ .register-section{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+ }
+ .register-now-btn{
+  width: 276px;
+  height: 60px;
+  border: 0px;
+  border-radius: 35px;
+  background :linear-gradient(-45deg, #EE7752,#EE7754, #ff545a, #ff545a);
+ }
+ .register-now-btn p{
+   color: #fff;
+   font-weight: bolder;
+   font-size:large
+ }
+ @media (max-width:786px) {
+  .register-section{
+    flex-direction: column;
+  }
+  .register-s{
+    margin-inline: 60px;
+   }
+  .register-s h1,h3{
+    padding-left: 20px;
+   }
+ }
+ .sponsers-section{
+  position: relative;
+ }
+ .sponsers-section-img{
+  height: 350px;
+  width: 100%;
+  object-fit:cover
+ }
+ .sponsers-all{
+  position: absolute;;
+  top:-35px;
+  left:150px;
+ }
+ @media (max-width:786px) {
+  .sponsers-all{left:10px;}
  }
