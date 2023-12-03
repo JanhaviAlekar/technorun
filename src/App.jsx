@@ -6,6 +6,8 @@ import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home';
 import ContactUs from './pages/ContactUs';
 import RegisterForm from './components/RegisterForm/RegisterForm'
+import HotelsAndConnectivity from './pages/HotelsAndConnectivity'
+import CashPrice from './pages/CashPrice'
 
 function App() {
   return (
@@ -13,8 +15,10 @@ function App() {
     <Navbar />
     <Routes>
       <Route path="/" element ={<Home/>}/>
-      <Route path="/Register" element={<RegisterForm/>}/>
+      <Route path="/register" element={<RegisterForm/>}/>
       <Route path="/ContactUs" element={<ContactUs/>} />
+      <Route path="/HotelsAndConnectivity" element={<HotelsAndConnectivity/>}/>
+      <Route path="/cash-price" element={<CashPrice/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>
