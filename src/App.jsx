@@ -8,6 +8,7 @@ import ContactUs from './pages/ContactUs';
 import RegisterForm from './components/RegisterForm/RegisterForm'
 import HotelsAndConnectivity from './pages/HotelsAndConnectivity'
 import CashPrice from './pages/CashPrice'
+import PageNotFound from './pages/PageNotFound'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="/ContactUs" element={<ContactUs/>} />
       <Route path="/HotelsAndConnectivity" element={<HotelsAndConnectivity/>}/>
       <Route path="/cash-price" element={<CashPrice/>}/>
+      <Route path="*" element={<PageNotFound/>} />
     </Routes>
     <Footer/>
     </BrowserRouter>

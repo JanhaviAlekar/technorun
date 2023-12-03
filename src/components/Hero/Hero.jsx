@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./hero.module.css";
 import img1 from '../../assets/homepage.png';
 import img2 from '../../assets/mobile-image.png'; // Import your mobile image
+import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -31,7 +32,7 @@ const Hero = () => {
           Embrace the Tech, Ignite Your Stride: Join Us at TechnoRun 
           Where Every Step is a Celebration of Fitness and Innovation in the Heart of Amravati!
         </p>
-        <a >Contact Us</a>
+        <NavLink to="/register">Register Now</NavLink>
       </div>
     </>
   );

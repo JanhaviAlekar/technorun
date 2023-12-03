@@ -45,8 +45,7 @@ animation: gradbar 15s ease infinite;
 }
 
 .footer__logo {
-  font-weight: 400;
-  text-transform: lowercase;
+  font-weight: 500;
   font-size: 1.5rem;
 }
 
@@ -430,7 +429,6 @@ animation: gradbar 15s ease infinite;
   color:#fff !important;
  }
  .register-s{
-  padding-inline: 100px;
   padding-bottom: 35px;
   border-bottom: 2px solid #ff5454;
  }
@@ -460,18 +458,18 @@ animation: gradbar 15s ease infinite;
   border-radius: 35px;
   background :linear-gradient(-45deg, #EE7752,#EE7754, #ff545a, #ff545a);
  }
- .register-now-btn p{
-   color: #fff;
-   font-weight: bolder;
-   font-size:large
+ .reg-link{
+  cursor:pointer;
+  color: #fff  !important;
+  font-weight: bold !important;
+  font-size: 20px !important;
+  text-decoration: none !important;
  }
+
  @media (max-width:786px) {
   .register-section{
     flex-direction: column;
   }
-  .register-s{
-    margin-inline: 60px;
-   }
   .register-s h1,h3{
     padding-left: 20px;
    }
@@ -543,7 +541,14 @@ animation: gradbar 15s ease infinite;
   background-color: #45a049;
 }
 .about-us-section{
-  margin: 25px;
+  font-size: 15px;;
+  line-height: 1.3rem;
+  background-color: #ff5454;
+ padding: 25px;
+  text-align: left;
+}
+.about-us-s{
+ text-align: center;
 }
 
 /* Responsive Styles for Contact Form */
@@ -554,8 +559,10 @@ animation: gradbar 15s ease infinite;
   }
 }
  .ALL-Pages-height{
-  padding-top:100px ;
-  padding-inline: 20px;
+  padding-top:60px ;
   min-height: 70vh;
   text-align: center;
  }
+.bold-text{
+  font-weight: bold;
+}
