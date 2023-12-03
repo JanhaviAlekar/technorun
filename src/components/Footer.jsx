@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 const Footer = () => {
     return (
         <>
@@ -7,7 +8,7 @@ const Footer = () => {
         <div className="footer__addr">
           <h1 className="footer__logo">Technorun</h1>
               
-          <h2>Contact</h2>
+          <NavLink to="/ContactUs">Contact Us</NavLink>
           
           <address>
             5534 Somewhere In. The World 22193-10212<br/>
@@ -22,15 +23,12 @@ const Footer = () => {
       
             <ul className="nav__ul">
               <li>
-                <a href="#">Online</a>
               </li>
       
               <li>
-                <a href="#">Print</a>
               </li>
                   
               <li>
-                <a href="#">Alternative Ads</a>
               </li>
             </ul>
           </li>
@@ -40,15 +38,12 @@ const Footer = () => {
             
             <ul className="nav__ul">
               <li>
-                <a href="#">Privacy Policy</a>
               </li>
               
               <li>
-                <a href="#">Terms of Use</a>
               </li>
               
               <li>
-                <a href="#">Sitemap</a>
               </li>
             </ul>
           </li>
@@ -58,22 +53,19 @@ const Footer = () => {
             
             <ul className="nav__ul">
               <li>
-                <a href="#">Privacy Policy</a>
               </li>
               
               <li>
-                <a href="#">Terms of Use</a>
               </li>
               
               <li>
-                <a href="#">Sitemap</a>
               </li>
             </ul>
           </li>
         </ul>
         
         <div className="legal">
-          <p>&copy; 2019 Something. All rights reserved.</p>
+          <p>&copy; 2023 Technorun. All rights reserved.</p>
           
           <div className="legal__links">
             <span>Made with <span className="heart">♥</span> remotely from Anywhere</span>

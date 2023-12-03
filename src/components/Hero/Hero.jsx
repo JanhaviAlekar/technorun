@@ -25,11 +25,11 @@ const Hero = () => {
         <img src={isMobile ? img2 : img1} alt="Banner" />
       </div>
       <div className={styles['banner-text']}>
-        
-        <h2>Take the lead in style</h2>
+
+        <h2>Run the Future</h2>
         <p>
-          Our latest generation of cars, trucks and SUVs comes loaded with
-          upgrades that extend beyond the surface.
+          Embrace the Tech, Ignite Your Stride: Join Us at TechnoRun 
+          Where Every Step is a Celebration of Fitness and Innovation in the Heart of Amravati!
         </p>
         <a >Contact Us</a>
       </div>

@@ -492,6 +492,67 @@ animation: gradbar 15s ease infinite;
  @media (max-width:786px) {
   .sponsers-all{left:10px;}
  }
+
+ /* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  margin-top: 64px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff; /* White background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the container */
+  width: 600px;
+
+  
+}
+.contact-us-container{
+  background-color: #ff5454;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form label {
+  margin: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 500px;
+}
+
+.contact-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px; /* Adjusted padding for a smaller size */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px; /* Adjusted font size */
+  width: 200px;
+  margin: 0 auto;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+.about-us-section{
+  margin: 25px;
+}
+
+/* Responsive Styles for Contact Form */
+@media (max-width: 600px) {
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+}
  .ALL-Pages-height{
   padding-top:100px ;
   padding-inline: 20px;
