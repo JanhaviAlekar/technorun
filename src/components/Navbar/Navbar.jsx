@@ -26,7 +26,7 @@ const Navbar = () => {
           <div className={`${styles['nav-elements']} ${showNavbar ? styles.active : ''}`}>
             <ul>
               <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/" >Home</NavLink>
               </li>
               <li>
                 <NavLink to="/register">Register</NavLink>
@@ -35,10 +35,10 @@ const Navbar = () => {
                 <NavLink to="/cash-price">Cash Price</NavLink>
               </li>
               <li>
-                <NavLink to="/hotelAndConnectivity">Hotels and connectivity</NavLink>
+                <NavLink to="/HotelsAndConnectivity">Hotels and connectivity</NavLink>
               </li>
               <li>
-                <NavLink to="/aboutUs">About Us</NavLink>
+                <NavLink to="/ContactUs">Contact Us</NavLink>
               </li>
             </ul>
           </div>
