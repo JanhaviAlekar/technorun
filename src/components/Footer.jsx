@@ -6,14 +6,10 @@ const Footer = () => {
          <footer className="footer">
         
         <div className="footer__addr">
-          <h1 className="footer__logo">Technorun</h1>
-              
-          <NavLink to="/ContactUs">Contact Us</NavLink>
-          
+          <h1 className="footer__logo">Technorun</h1>          
           <address>
-            5534 Somewhere In. The World 22193-10212<br/>
-                
-            <a className="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+            5534 Somewhere In. The World 22193-10212<br/>  
+            <NavLink to="/ContactUs" className="footer__btn reg-link" >Contact Us</NavLink>
           </address>
         </div>
         
@@ -66,10 +62,6 @@ const Footer = () => {
         
         <div className="legal">
           <p>&copy; 2023 Technorun. All rights reserved.</p>
-          
-          <div className="legal__links">
-            <span>Made with <span className="heart">♥</span> remotely from Anywhere</span>
-          </div>
         </div>
       </footer>
         </>
