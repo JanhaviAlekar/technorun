@@ -19,7 +19,7 @@ const PaymentsPage = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowButton(true);
-    }, 10000);
+    }, 45000);
 
     // Clear the timer if the component unmounts or the dependency changes
     return () => clearTimeout(timer);
@@ -30,7 +30,7 @@ const PaymentsPage = () => {
 
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+      e.preventDefault();
       const database = getDatabase(firebaseApp);
       const aadharKey = user.aadhar;
       const usersRef = ref(database, `registrations/${aadharKey}`);
@@ -60,8 +60,9 @@ const PaymentsPage = () => {
       {showButton && (
       <div>
         <p>If your payment was successful please click the button below</p>
-      <button onClick={handleSubmit} className={styles.button}>Successfull
-      </button>
+      <div onClick={handleSubmit} className={styles.button_fail}>Successfull
+      </div>
+        <p>If you payment failed please contact us through whatsapp.</p>
       </div>)}
       {/* You can add additional details or actions related to the payment confirmation here */}
     </div>

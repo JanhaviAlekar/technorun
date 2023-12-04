@@ -1,5 +1,5 @@
 import { useState,useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import styles from './navbar.module.css'; // Import CSS module
 import logo from '../../assets/2.png';
 import { ReactComponent as Hamburger } from '../../assets/fast-food-burger-svgrepo-com.svg';
@@ -10,6 +10,10 @@ const Navbar = () => {
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
+  const location = useLocation();
+  useEffect(()=>{
+    setShowNavbar(false);
+  },[location.pathname]);
 
   return (
     <>
@@ -44,7 +48,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      
     </>
   );
 };
