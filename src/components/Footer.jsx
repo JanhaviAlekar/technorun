@@ -6,16 +6,12 @@ const Footer = () => {
          <footer className="footer">
         
         <div className="footer__addr">
-          <h1 className="footer__logo">Technorun</h1>          
-          <address>
-            5534 Somewhere In. The World 22193-10212<br/>  
-            <NavLink to="/ContactUs" className="footer__btn reg-link" >Contact Us</NavLink>
-          </address>
+          <h1 className="footer__logo">Technorun</h1>
         </div>
         
         <ul className="footer__nav">
           <li className="nav__item">
-            <h2 className="nav__title">Media</h2>
+            <h2><NavLink to="/Register" className="footer__btn reg-link" >Register</NavLink></h2> 
       
             <ul className="nav__ul">
               <li>
@@ -30,7 +26,7 @@ const Footer = () => {
           </li>
           
           <li className="nav__item">
-            <h2 className="nav__title">Legal</h2>
+          <h2><NavLink to="/cash-price" className="footer__btn reg-link" >Cash-Prizes</NavLink></h2> 
             
             <ul className="nav__ul">
               <li>
@@ -45,7 +41,8 @@ const Footer = () => {
           </li>
           
           <li className="nav__item">
-            <h2 className="nav__title">Legal</h2>
+          <h2><NavLink to="/ContactUs" className="footer__btn reg-link" >Contact Us</NavLink></h2> 
+
             
             <ul className="nav__ul">
               <li>
@@ -62,6 +59,8 @@ const Footer = () => {
         
         <div className="legal">
           <p>&copy; 2023 Technorun. All rights reserved.</p>
+          
+
         </div>
       </footer>
         </>

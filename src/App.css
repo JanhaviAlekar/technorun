@@ -45,8 +45,8 @@ animation: gradbar 15s ease infinite;
 }
 
 .footer__logo {
-  font-weight: 500;
-  font-size: 1.5rem;
+  font-weight: 800;
+  font-size: 2rem;
 }
 
 .footer__addr h2 {
@@ -405,7 +405,7 @@ animation: gradbar 15s ease infinite;
 .card-s .textt{
   z-index: 1 !important;
   color: #000;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 16px;
   text-align: center;
 }
@@ -431,6 +431,9 @@ animation: gradbar 15s ease infinite;
  .register-s{
   padding-bottom: 35px;
   border-bottom: 2px solid #ff5454;
+ }
+ .register-text p{
+  font-weight: 400;
  }
  .register-text{
   text-align: center;
@@ -565,4 +568,59 @@ animation: gradbar 15s ease infinite;
  }
 .bold-text{
   font-weight: bold;
+}
+.cashprize {
+  font-family: 'Arial';
+  border-collapse: collapse;
+  border: 1px solid #eee;
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10),
+     0px 10px 20px rgba(0, 0, 0, 0.05),
+     0px 20px 20px rgba(0, 0, 0, 0.05),
+     0px 30px 20px rgba(0, 0, 0, 0.05); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+.cashprize th,
+.cashprize td {
+  color: #999;
+  border: 1px solid #eee;
+  padding: 12px 20px; /* Adjust the padding as needed */
+  border-collapse: collapse;
+}
+
+.cashprize th {
+  background: #ff545a;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.cashprize th.last {
+  border-right: none;
+}
+
+/* Responsive styles */
+.tables-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-wrapper {
+  text-align: center;
+  margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+.table-title {
+  margin-bottom: 10px;
+  margin-top: 80px; /* Adjust the margin as needed */
+}
+
+@media (max-width: 600px) {
+  .cashprize th,
+  .cashprize td {
+    padding: 50px 25px; /* Adjust the padding for smaller screens */
+  }
 }
