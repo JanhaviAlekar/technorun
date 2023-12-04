@@ -1,13 +1,55 @@
 // RegistrationForm.js
-import React from 'react';
+import React, { useContext } from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import styles from './registerform.module.css'; // Import the CSS module
+import { useNavigate } from 'react-router-dom';
+import UserContext from '../../context/userContext';
 
 const RegisterForm = () => {
   const { handleSubmit, control, register, formState: { errors } } = useForm();
+  const [age, setAge] = useState(null);
+  const navigate = useNavigate();
+  const { setUser } = useContext(UserContext);
+  const [formData, setFormData] = useState({
+    name: '',
+    phoneNumber: '',
+    email: '',
+    aadhar: '',
+    age: '',
+  });
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+
+
+  const calculateAge = (dob) => {
+    const today = new Date();
+    const birthDate = new Date(dob);
+
+    let calculatedAge = today.getFullYear() - birthDate.getFullYear();
+
+    // Check if the birthday has not occurred yet in the current year
+    const isBirthdayInFuture =
+      today.getMonth() < birthDate.getMonth() ||
+      (today.getMonth() === birthDate.getMonth() && today.getDate() < birthDate.getDate());
+
+    if (isBirthdayInFuture) {
+      calculatedAge--;
+    }
+    setAge(calculatedAge);
+  };
+
+  const onSubmit = async (data) => {
+    const updatedFormData = {...formData, age: age};
+    // console.log('age:' , userData);
+    setUser(updatedFormData);
+    navigate('/payments', { state: { age } });
   };
 
   return (
@@ -22,6 +64,8 @@ const RegisterForm = () => {
           type="text"
           id="name"
           className={styles.formControl}
+          value={formData.name}
+          onChange={handleInputChange}
         />
         {errors.name && <p className={styles.error}>{errors.name.message}</p>}
       </div>
@@ -39,6 +83,8 @@ const RegisterForm = () => {
           type="tel"
           id="phoneNumber"
           className={styles.formControl}
+          value={formData.phoneNumber}
+          onChange={handleInputChange}
         />
         {errors.phoneNumber && <p className={styles.error}>{errors.phoneNumber.message}</p>}
       </div>
@@ -56,17 +102,51 @@ const RegisterForm = () => {
           type="email"
           id="email"
           className={styles.formControl}
+          value={formData.email}
+          onChange={handleInputChange}
         />
         {errors.email && <p className={styles.error}>{errors.email.message}</p>}
       </div>
 
       <div className={styles.formGroup}>
-        <p>Razor Pay Payment Button</p>
-      </div>
+          <label htmlFor="aadhar">Aadhar Card Number:</label>
+          <input
+            {...register('aadhar', {
+              required: 'Aadhar Card Number is required',
+              pattern: {
+                value: /^\d{12}$/,
+                message: 'Invalid Aadhar Card Number',
+              },
+            })}
+            type="text"
+            id="aadhar"
+            className={styles.formControl}
+            value={formData.aadhar}
+            onChange={handleInputChange}
+          />
+          {errors.aadhar && <p className={styles.error}>{errors.aadhar.message}</p>}
+        </div>
+
+        <div className={styles.formGroup}>
+          <label htmlFor="dob">Date of Birth:</label>
+          <input
+            {...register('dob', {
+              required: 'Date of Birth is required',
+              // You may use a more specific validation for the date of birth
+            })}
+            type="date"
+            id="dob"
+            className={styles.formControl}
+            onBlur={(e) => calculateAge(e.target.value, setAge)}
+          />
+          <p>Date of Birth should be same as on Aadhar.</p>
+          {errors.dob && <p className={styles.error}>{errors.dob.message}</p>}
+        </div>
 
       <div className={styles.formGroup}>
         <button type="submit" className={styles.submitButton}>Register</button>
       </div>
+
     </form>
     </div>
   );

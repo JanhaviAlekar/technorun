@@ -1,0 +1,36 @@
+/* paymentspage.module.css */
+
+.container {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color:#ff545a;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.payment_container {
+    max-width: 600px;
+    min-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .payment_success {
+    color: #4caf50;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .payment_message {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Add more styles as needed */
+  
