@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 const ContactUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="ALL-Pages-height">
       <div className="about-us-section">
@@ -44,14 +47,13 @@ const ContactUs = () => {
           community. Scenic Route: Enjoy the picturesque beauty of Amravati as
           you run through its streets, parks, and landmarks. How to Participate:
           Register for TechnoRun today to secure your spot in this unique blend
-          of technology and athleticism. Visit our registration page [insert
-          registration link] for details on how to sign up and be a part of this
+          of technology and athleticism. Visit our registration page. for details on how to sign up and be a part of this
           one-of-a-kind event.
         </p>
         <p>
           <span className="bold-text">Contact Information : </span>
           For inquiries, sponsorship opportunities, or any assistance, feel free
-          to reach out to us at [insert email/phone number]. Join us at
+          to reach out to us at WhatsApp: +918010117421 and Email:  info@technorun.co.in . Join us at
           TechnoRun - where every step you take brings you closer to a
           healthier, more connected community. Lace up your running shoes,
           embrace the technology, and let's run towards a brighter, fitter
