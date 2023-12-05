@@ -1,10 +1,10 @@
 import React from "react";
 const CashPrice = () =>{
  return (
-
+<div className="ALL-Pages-height">
     <div className="tables-conatiner">
       <div className="table-wrapper">
-      <h1 className="table-title">Above 15 years</h1>
+      <h1 className="table-title">15 years and older</h1>
     <div className="cashprize">
 <table>
       <thead>
@@ -40,7 +40,7 @@ const CashPrice = () =>{
     </div>
     </div>
     <div className="table-wrapper">
-      <h1 className="table-title">Below 15 years</h1>
+      <h1 className="table-title">Under 15 years</h1>
    <div className="cashprize">
 
     <table >
@@ -74,7 +74,7 @@ const CashPrice = () =>{
    </div>
     </div>
     </div>
-
+    </div>
   );
 };
 export default CashPrice;

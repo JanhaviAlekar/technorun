@@ -59,10 +59,10 @@ const PaymentsPage = () => {
       {age && age >= 15 && <RazorPayButtonAbove15/>}
       {showButton && (
       <div>
-        <p>If your payment was successful please click the button below</p>
+        <p className='payment-p'>If your payment was successful please click the button below</p>
       <div onClick={handleSubmit} className={styles.button_fail}>Successfull
       </div>
-        <p>If you payment failed please contact us through whatsapp.</p>
+        <p className='payment-p'>If you payment failed please contact us through whatsapp.</p>
       </div>)}
       {/* You can add additional details or actions related to the payment confirmation here */}
     </div>

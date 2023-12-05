@@ -1,6 +1,6 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-import { BrowserRouter , useNavigate} from 'react-router-dom'
+import { BrowserRouter} from 'react-router-dom'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home';
@@ -13,6 +13,7 @@ import PageNotFound from './pages/PageNotFound'
 import PaymentSuccess from './pages/PaymentSuccess/PaymentSuccess'
 import { useEffect } from 'react'
 import UserContextProvider from './context/userContexrProvider'
+import Sponsors from './components/Sponsors'
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
       <Route path="/payments" element={<Payments/>} />
       <Route path="/payments-success" element={<PaymentSuccess/>} />
     </Routes>
+    <Sponsors/>
     <Footer/>
     </BrowserRouter>
     </UserContextProvider>
