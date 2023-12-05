@@ -55,7 +55,7 @@ const RegisterForm = () => {
   return (
     <div className={styles.registercontainer}>
     <form onSubmit={handleSubmit(onSubmit)} className={styles.registrationForm}>
-      <h2>Registration Form</h2>
+      <h2 className={styles.registrationh2}>Registration Form</h2>
 
       <div className={styles.formGroup}>
         <label htmlFor="name">Name:</label>
@@ -63,6 +63,7 @@ const RegisterForm = () => {
           {...register('name', { required: 'Name is required' })}
           type="text"
           id="name"
+          placeholder='Your full name'
           className={styles.formControl}
           value={formData.name}
           onChange={handleInputChange}
@@ -101,6 +102,7 @@ const RegisterForm = () => {
           })}
           type="email"
           id="email"
+          placeholder='ex: myname@example.com'
           className={styles.formControl}
           value={formData.email}
           onChange={handleInputChange}
@@ -139,12 +141,14 @@ const RegisterForm = () => {
             className={styles.formControl}
             onBlur={(e) => calculateAge(e.target.value, setAge)}
           />
-          <p>Date of Birth should be same as on Aadhar.</p>
+          <p className={styles.warning}><span>Note: </span>Date of Birth should be same as on Aadhar.</p>
           {errors.dob && <p className={styles.error}>{errors.dob.message}</p>}
         </div>
 
       <div className={styles.formGroup}>
+        <div className={styles.registrationh2}>
         <button type="submit" className={styles.submitButton}>Register</button>
+        </div>
       </div>
 
     </form>
