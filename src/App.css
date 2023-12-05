@@ -475,25 +475,45 @@ animation: gradbar 15s ease infinite;
   }
   .register-s h1,h3{
     padding-left: 20px;
+
    }
  }
- .sponsers-section{
+ .map-section{
   position: relative;
  }
+ .map-section img{
+  height: 450px;
+  width: 100%;
+  object-fit:cover;
+  margin-left: 40px;
+
+ }
+ @media (max-width: 786px) {
+
+  .map-section img {
+    height: auto;
+  }
+}
  .sponsers-section-img{
   height: 350px;
   width: 100%;
-  object-fit:cover
+  object-fit:cover;
+  margin-bottom:50px
  }
  .sponsers-all{
   position: absolute;;
   top:-35px;
   left:150px;
  }
- @media (max-width:786px) {
-  .sponsers-all{left:10px;}
- }
+ @media (max-width: 786px) {
+  .sponsers-all {
+    left: 10px;
+  }
 
+  .sponsers-section-img {
+    height: auto;
+  }
+}
  /* Contact Form */
 .contact-form {
   display: flex;
@@ -623,4 +643,12 @@ animation: gradbar 15s ease infinite;
   .cashprize td {
     padding: 50px 25px; /* Adjust the padding for smaller screens */
   }
+}
+
+.map-img{
+  .sponsers-section-img{
+    height: 500px;
+    width: 100%;
+    object-fit:cover;
+   }
 }

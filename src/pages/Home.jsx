@@ -3,7 +3,8 @@ import AllSponsers from "../components/AllSponsers";
 import { HotelsCard } from "../components/HotelsCard";
 import Hero from "../components/Hero/Hero";
 import CountdownTimer from '../components/count/FlipCountdown'
-import img1 from "../assets/homepage.png"
+import sponimg from "../assets/sponsor.jpg";
+import map from "../assets/map.jpg";
 import { NavLink } from 'react-router-dom';
 const Home = () => {
 
@@ -55,8 +56,8 @@ Technorun isn't just a marathon; it's a fusion of technology, athleticism, and c
       </div>
     </div>
     </div>
-    <div className="sponsers-section">
-        <img className="sponsers-section-img" src={img1} alt="image" />
+    <div className="map-section">
+        <img className="map-img" src={map} alt="image" />
     </div>
     </>   );
 

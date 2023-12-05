@@ -1,9 +1,15 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import sponimg from "../assets/sponsor.jpg";
+import sponimgmob from "../assets/sponsor-mob.jpg"
 const Footer = () => {
     return (
         <>
+
          <footer className="footer">
+         <div className="sponsers-section">
+        <img className="sponsers-section-img" src={sponimg} alt="image" />
+    </div>
         
         <div className="footer__addr">
           <h1 className="footer__logo">Technorun</h1>
