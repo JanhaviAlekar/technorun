@@ -1,4 +1,5 @@
 import './App.css'
+import  { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { BrowserRouter} from 'react-router-dom'
 import Footer from './components/Footer'
@@ -16,7 +17,14 @@ import UserContextProvider from './context/userContexrProvider'
 import Sponsors from './components/Sponsors'
 
 function App() {
-
+  const [loading, setLoading] = useState(true);
+  const spinner = document.getElementById("spinner");
+  if (spinner) {
+    setTimeout(() => {
+      spinner.style.display = "none";
+      setLoading(false);
+    }, 2000);
+  }
   useEffect(() => {
     console.log('App component mounted');
     return () => {
@@ -25,6 +33,7 @@ function App() {
   }, []); 
 
   return (
+    !loading && (
     <UserContextProvider>
     <BrowserRouter>
     <Navbar />
@@ -42,6 +51,7 @@ function App() {
     <Footer/>
     </BrowserRouter>
     </UserContextProvider>
+    )
   );
 }
 export default App;
