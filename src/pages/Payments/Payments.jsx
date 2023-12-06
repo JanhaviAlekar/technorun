@@ -17,6 +17,7 @@ const PaymentsPage = () => {
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const timer = setTimeout(() => {
       setShowButton(true);
     }, 45000);
@@ -62,7 +63,7 @@ const PaymentsPage = () => {
         <p className='payment-p'>If your payment was successful please click the button below</p>
       <div onClick={handleSubmit} className={styles.button_fail}>Successfull
       </div>
-        <p className='payment-p'>If you payment failed please contact us through whatsapp.</p>
+        <p className='payment-p'>If you payment failed please contact us through whatsapp number: 8010117421.</p>
       </div>)}
       {/* You can add additional details or actions related to the payment confirmation here */}
     </div>

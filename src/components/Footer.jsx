@@ -12,18 +12,10 @@ const Footer = () => {
         <ul className="footer__nav">
           <li className="nav__item">
             <h2>
-              <NavLink to="/Register" className="footer__btn">
+              <NavLink to="/tutorial" className="footer__btn">
                 Register
               </NavLink>
             </h2>
-
-            <ul className="nav__ul">
-              <li></li>
-
-              <li></li>
-
-              <li></li>
-            </ul>
           </li>
 
           <li className="nav__item">

@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 const CashPrice = () =>{
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
  return (
 <div className="ALL-Pages-height">
     <div className="tables-conatiner">

@@ -1,0 +1,92 @@
+/* Tutorial.module.css */
+.container {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+  .warning {
+    color: red;
+  }
+  
+  .tutorial-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .centermaker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tutorial-step {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .centermaker img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (min-width: 600px) {
+    .centermaker img {
+        max-width: 300px;  /* Adjust max-width for larger devices */
+    }
+}
+
+  .button_fail {
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #27ae60;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 13px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+  
+  .button_fail:hover {
+    background-color: #1e8449;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+  }
+  
+  .button_fail:active {
+    transform: translateY(2px);
+    transition-duration: .35s;
+  }
+  
+  .button_fail:hover {
+    box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+  }

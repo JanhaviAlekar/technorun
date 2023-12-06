@@ -431,6 +431,7 @@ animation: gradbar 15s ease infinite;
  .register-text-para{
   font-weight: 500;
   font-size: 16px;
+  padding: 20px;
   padding-left: 20px;
   text-align: center;
  }
@@ -481,12 +482,8 @@ animation: gradbar 15s ease infinite;
   .register-section{
     flex-direction: column;
   }
-  .register-s h1,h3{
-    padding-left: 20px;
-
-   }
    .register-text-para{
-    padding: 0 8px;
+    padding: 10px 30px;
    }
  }
  .map-section{

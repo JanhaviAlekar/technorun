@@ -15,6 +15,7 @@ import PaymentSuccess from './pages/PaymentSuccess/PaymentSuccess'
 import { useEffect } from 'react'
 import UserContextProvider from './context/userContexrProvider'
 import Sponsors from './components/Sponsors'
+import Tutorial from './pages/Tutorial/Tutorial'
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -46,6 +47,7 @@ function App() {
       <Route path="*" element={<PageNotFound/>} />
       <Route path="/payments" element={<Payments/>} />
       <Route path="/payments-success" element={<PaymentSuccess/>} />
+      <Route path="/tutorial" element={<Tutorial/>} />      
     </Routes>
     <Sponsors/>
     <Footer/>

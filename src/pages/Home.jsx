@@ -9,9 +9,11 @@ const Home = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 724); // Set the breakpoint according to your needs
     };
+
 
     handleResize(); // Set initial screen size
     window.addEventListener("resize", handleResize);
@@ -19,6 +21,8 @@ const Home = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
+
+
   }, []);
   const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
   const NOW_IN_MS = new Date().getTime();
@@ -41,7 +45,7 @@ const Home = () => {
         <div className="register-section">
           <div className="register">
             <h3 className="register-text">REGISTER NOW</h3>
-            <NavLink to="/register" className="reg-link">
+            <NavLink to="/tutorial" className="reg-link">
               <button className="register-now-btn">
                 <p className="reg-link">Register here</p>
               </button>
