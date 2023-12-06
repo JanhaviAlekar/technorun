@@ -24,7 +24,7 @@ const Home = () => {
 
 
   }, []);
-  const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
+  const THREE_DAYS_IN_MS = 18 * 24 * 60 * 60 * 1000;
   const NOW_IN_MS = new Date().getTime();
 
   const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
@@ -57,7 +57,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="route-register">
+      <div className="route-register ">
         <p className="register-text subHeading">
           <p>
             <h1 className="heading">ROUTE</h1>

@@ -50,27 +50,24 @@ const ContactUs = () => {
           of technology and athleticism. Visit our registration page. for details on how to sign up and be a part of this
           one-of-a-kind event.
         </p>
-        <p>
-          <span className="bold-text">Contact Information : </span>
-          For inquiries, sponsorship opportunities, or any assistance, feel free
-          to reach out to us at WhatsApp: +918010117421 and Email:  info@technorun.co.in . Join us at
-          TechnoRun - where every step you take brings you closer to a
-          healthier, more connected community. Lace up your running shoes,
-          embrace the technology, and let's run towards a brighter, fitter
-          future together!
-        </p>
+  
         <p>See you at the starting line!</p>
 
-        {/* <p>
+        <p>
          <div className="about-us-s">
           <h3> Contact Us</h3>
-         </div>
-We're here to assist you! If you have any questions or need assistance, please feel free to reach out to us.
-
-You can also email us. Click here to reveal email address https://veilmail.io/e/FkKh7o
-
-We use VeilMail.io to protect your email address from spam.
-</p> */}
+        
+        <p>
+We're here to assist you!
+<br/> If you have any questions or need assistance, please feel free to reach out to us.
+<br/>
+You can also email us on
+<br/><span>  info@technorun.co.in</span>
+<br/>
+<b> Contact No. :+918010117421</b>
+</p>
+</div>
+</p>
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ const Footer = () => {
       <footer className="footer">
         <div className="footer__addr">
           <h1 className="footer__logo">Technorun</h1>
+          <h2>Contact us :- +918010117421</h2>
         </div>
 
         <ul className="footer__nav">
@@ -52,7 +53,8 @@ const Footer = () => {
         </ul>
 
         <div className="legal">
-          <p>&copy; 2023 Technorun. All rights reserved.</p>
+          <p> &nbsp; &nbsp;&nbsp;&nbsp;&copy; 2023 Technorun. All rights reserved.</p>
+          <p>Designed and developed by Blue <span className="logo-blue">PAPER</span>.media</p>
         </div>
       </footer>
     </>
