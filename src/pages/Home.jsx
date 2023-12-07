@@ -24,10 +24,11 @@ const Home = () => {
 
 
   }, []);
-  const THREE_DAYS_IN_MS = 18 * 24 * 60 * 60 * 1000;
-  const NOW_IN_MS = new Date().getTime();
+  const targetDate = new Date("2023-12-24T00:00:00");
+  // const NOW_IN_MS = new Date().getTime();
 
-  const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
+  // const dateTimeAfterThreeDays = targetDate.getTime() - NOW_IN_MS;
+  // const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
   return (
     <>
       <Hero />
@@ -53,7 +54,7 @@ const Home = () => {
           </div>
           <div className="time-left">
             <h3 className="register-text">TIME LEFT</h3>
-            <CountdownTimer targetDate={dateTimeAfterThreeDays} />
+            <CountdownTimer targetDate={targetDate.getTime()} />
           </div>
         </div>
       </div>
