@@ -41,7 +41,6 @@ animation: gradbar 15s ease infinite;
 
 .footer__addr {
   margin-right: 1.25em;
-  margin-bottom: 2em;
 }
 
 .footer__logo {
@@ -60,17 +59,18 @@ animation: gradbar 15s ease infinite;
   font-size: 15px;
 }
 
-.footer address {
+.footer h2 {
+  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
-  color: #2f2f2f
+  font-weight: 500;
+  color: #8c8b8b
 }
 
 .footer__btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 36px;
+  height: 24px;
   max-width: max-content;
   color: #2f2f2f;
   font-size: 18px;
@@ -116,8 +116,7 @@ animation: gradbar 15s ease infinite;
   font-weight: bold;
 }
 .legal {
-  margin:0 10px;
-    align-items: center;
+  text-align: center;
     font-weight: 400;
     color: #8c8b8b
 }
@@ -127,11 +126,6 @@ animation: gradbar 15s ease infinite;
   align-items: center;
 }
 
-@media screen and (min-width: 24.375em) {
-  .legal  {
-    margin-left:35%;
-  }
-}
 
 @media screen and (min-width: 40.375em) {
   .footer__nav > * {
@@ -149,9 +143,10 @@ animation: gradbar 15s ease infinite;
   .footer__nav {
     flex: 2 0px;
   }
-  .legal  {
-      margin-left:35%;
-    }
+}
+.logo-blue{
+  color:#818ef0;
+  font-weight: bold;
 }
 
 .banner-img {
@@ -439,6 +434,7 @@ animation: gradbar 15s ease infinite;
   text-align: center;
  }
  .heading{
+  padding: 0px 20px;
   font-weight: bolder;
   font-size: 38px; 
   color:#ff5454;
@@ -589,6 +585,7 @@ animation: gradbar 15s ease infinite;
   font-weight: 500
 }
 .about-us-s{
+  line-height: 1.5rem;
  text-align: center;
 }
 
