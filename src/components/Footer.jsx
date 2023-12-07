@@ -13,22 +13,22 @@ const Footer = () => {
         <ul className="footer__nav">
           <li className="nav__item">
             <h2>
-              <NavLink to="/tutorial" className="footer__btn">
-                Register
+              <NavLink to="/PrivacyPolicy" className="footer__btn">
+                Privacy Policy
               </NavLink>
             </h2>
           </li>
 
           <li className="nav__item">
             <h2>
-              <NavLink to="/cash-price" className="footer__btn ">
-                <span>Cash-Prizes</span>
+              <NavLink to="/TermsandConditions" className="footer__btn ">
+                <span>Terms & Conditions</span>
               </NavLink>
             </h2>
 
             <ul className="nav__ul">
               <li></li>
-
+              
               <li></li>
 
               <li></li>
@@ -37,18 +37,11 @@ const Footer = () => {
 
           <li className="nav__item">
             <h2>
-              <NavLink to="/ContactUs" className="footer__btn ]">
+              <NavLink to="/ContactUs" className="footer__btn">
                 Contact Us
               </NavLink>
             </h2>
 
-            <ul className="nav__ul">
-              <li></li>
-
-              <li></li>
-
-              <li></li>
-            </ul>
           </li>
         </ul>
 

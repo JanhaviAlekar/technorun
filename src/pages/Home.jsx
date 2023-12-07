@@ -1,10 +1,10 @@
 import React ,{useEffect,useState} from "react";
 import Hero from "../components/Hero/Hero";
 import CountdownTimer from "../components/count/FlipCountdown";
-import map from "../assets/map.jpg";
 import { NavLink } from "react-router-dom";
 import img1 from "../assets/map.jpg";
 import img2 from '../assets/map.png'; // Import your mobile image
+import Sponsors from "../components/Sponsors";
 const Home = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -103,6 +103,7 @@ const Home = () => {
       <div className="map-section">
          <img className="map-img" src={isMobile ? img2 : img1} alt="Map" />
     </div>
+    <Sponsors/>
     </>
   );
 };

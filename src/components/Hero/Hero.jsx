@@ -32,6 +32,7 @@ const Hero = () => {
           Embrace the Tech, Ignite Your Stride: Join Us at TechnoRun 
           Where Every Step is a Celebration of Fitness and Innovation in the Heart of Amravati!
         </p>
+        <p>Save the Date: December 24, 2023</p>
         <NavLink to="/tutorial">Register Now</NavLink>
       </div>
     </>

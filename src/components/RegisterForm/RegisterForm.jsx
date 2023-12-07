@@ -5,9 +5,10 @@ import { useForm } from 'react-hook-form';
 import styles from './registerform.module.css'; // Import the CSS module
 import { useNavigate } from 'react-router-dom';
 import UserContext from '../../context/userContext';
+import Sponsors from '../Sponsors';
 
 const RegisterForm = () => {
-  const { handleSubmit, control, register, formState: { errors } } = useForm();
+  const { handleSubmit, register, formState: { errors } } = useForm();
   const [age, setAge] = useState(null);
   const navigate = useNavigate();
   const { setUser } = useContext(UserContext);
@@ -53,6 +54,7 @@ const RegisterForm = () => {
   };
 
   return (
+    <>
     <div className={styles.registercontainer}>
     <form onSubmit={handleSubmit(onSubmit)} className={styles.registrationForm}>
       <h2 className={styles.registrationh2}>Registration Form</h2>
@@ -153,6 +155,8 @@ const RegisterForm = () => {
 
     </form>
     </div>
+    <Sponsors/>
+   </>
   );
 };
 
