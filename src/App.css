@@ -19,7 +19,7 @@ body {
 }
 .grad-bar {
 width: 100%;
-height: 5px;
+height: 3px;
 background: linear-gradient(-45deg, #EE7752, #E73C7E, #ff545a, #ff545a);
 background-size: 400% 400%;
 -webkit-animation: gradbar 15s ease infinite;
@@ -483,7 +483,6 @@ animation: gradbar 15s ease infinite;
    }
  }
  .map-section{
-  border-top: 2px solid #ff5454;
   position: relative;
   align-content: center;
  }

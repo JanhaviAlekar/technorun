@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
-const ContactUs = () => {
+import Sponsors from "../components/Sponsors";
+const AboutUs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
+    <>
     <div className="ALL-Pages-height">
       <div className="about-us-section">
         <div className="about-us-s">
@@ -22,10 +24,10 @@ const ContactUs = () => {
         </p>
         <p>
           <span className="bold-text"> Date and Location : </span>
-          Mark your calendars! TechnoRun is scheduled to take place on [Insert
-          Date] in the beautiful city of Amravati. The marathon route will guide
-          you through the scenic landscapes and iconic landmarks of this
-          historic city, providing a perfect backdrop for an unforgettable
+          Mark your calendars! TechnoRun is scheduled to take place on 24
+          December 2023 in the beautiful city of Amravati. The marathon route
+          will guide you through the scenic landscapes and iconic landmarks of
+          this historic city, providing a perfect backdrop for an unforgettable
           journey.
         </p>
 
@@ -47,30 +49,34 @@ const ContactUs = () => {
           community. Scenic Route: Enjoy the picturesque beauty of Amravati as
           you run through its streets, parks, and landmarks. How to Participate:
           Register for TechnoRun today to secure your spot in this unique blend
-          of technology and athleticism. Visit our registration page. for details on how to sign up and be a part of this
-          one-of-a-kind event.
+          of technology and athleticism. Visit our registration page. for
+          details on how to sign up and be a part of this one-of-a-kind event.
         </p>
-  
+
         <p>See you at the starting line!</p>
 
         <p>
-         <div className="about-us-s">
-          <h3> Contact Us</h3>
-        
-        <p>
-We're here to assist you!
-<br/> If you have any questions or need assistance, please feel free to reach out to us.
-<br/>
-You can also email us on
-<br/><span>  info@technorun.co.in</span>
-<br/>
-<b> Contact No. :+918010117421</b>
-</p>
-</div>
-</p>
+          <div className="about-us-s">
+            <h3> Contact Us</h3>
+
+            <p>
+              We're here to assist you!
+              <br /> If you have any questions or need assistance, please feel
+              free to reach out to us.
+              <br />
+              You can also email us on
+              <br />
+              <span> info@technorun.co.in</span>
+              <br />
+              <b> Contact No. :+918010117421</b>
+            </p>
+          </div>
+        </p>
       </div>
     </div>
+    <Sponsors/>
+    </>
   );
 };
 
-export default ContactUs;
+export default AboutUs;

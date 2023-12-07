@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
+import Sponsors from "../components/Sponsors";
 const CashPrice = () =>{
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
  return (
+  <>
 <div className="ALL-Pages-height">
     <div className="tables-conatiner">
       <div className="table-wrapper">
@@ -78,6 +80,8 @@ const CashPrice = () =>{
     </div>
     </div>
     </div>
+    <Sponsors/>
+    </>
   );
 };
 export default CashPrice;
