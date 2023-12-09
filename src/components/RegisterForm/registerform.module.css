@@ -1,12 +1,12 @@
 /* registerform.module.css */
 
 .registercontainer{
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding-top:62px;
     background-color:#ff545a;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
 }
-
 .registrationForm {
     /* overflow: hidden; */
     /* position: relative;   */

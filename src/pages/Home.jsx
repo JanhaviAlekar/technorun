@@ -46,7 +46,7 @@ const Home = () => {
         <div className="register-section">
           <div className="register">
             <h3 className="register-text">REGISTER NOW</h3>
-            <NavLink to="/tutorial" className="reg-link">
+            <NavLink to="/register" className="reg-link">
               <button className="register-now-btn">
                 <p className="reg-link">Register here</p>
               </button>

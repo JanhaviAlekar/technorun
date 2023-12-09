@@ -48,9 +48,9 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  to="/tutorial"
+                  to="/register"
                   activeClassName={styles.active}
-                  className={activeLink === "/tutorial" ? styles.active : ""}
+                  className={activeLink === "/register" ? styles.active : ""}
                 >
                   Register
                 </NavLink>
