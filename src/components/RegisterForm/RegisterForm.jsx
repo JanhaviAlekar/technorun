@@ -1,5 +1,5 @@
 // RegistrationForm.js
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import styles from './registerform.module.css'; // Import the CSS module
@@ -19,6 +19,10 @@ const RegisterForm = () => {
     aadhar: '',
     age: '',
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
