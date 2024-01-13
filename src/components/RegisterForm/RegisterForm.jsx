@@ -23,7 +23,7 @@ const RegisterForm = () => {
   return (
     <>
     <div className={styles.registercontainer}>
-    <iframe src="https://formfacade.com/sm/MdSDHvbI5"  name="myiFrame" scrolling="yes" frameborder="0" marginheight="0px" marginwidth="0px" width={isMobile? "375px" :"900px"} height="600px" allowfullscreen></iframe>
+    <iframe src="https://formfacade.com/sm/MdSDHvbI5" title="myapp"  name="myiFrame" scrolling="yes" frameborder="0" marginheight="0px" marginwidth="0px" width="375px" height="725px" allowfullscreen></iframe>
     </div>
    </>
   );

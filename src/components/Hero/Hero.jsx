@@ -28,12 +28,20 @@ const Hero = () => {
       <div className={styles['banner-text']}>
 
         <h2>Run the Future</h2>
+        
         <p>
           Embrace the Tech, Ignite Your Stride: Join Us at TechnoRun 
           Where Every Step is a Celebration of Fitness and Innovation in the Heart of Amravati!
+          
         </p>
-        <p>Save the Date: December 24, 2023</p>
+        <p>Save the Date: January 28, 2024
+        <br />
+          <b>Fees only 350 INR</b>
+        </p>
         <NavLink to="/register">Register Now</NavLink>
+        
+        
+
       </div>
     </>
   );
