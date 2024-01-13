@@ -24,7 +24,7 @@ const Home = () => {
 
 
   }, []);
-  const targetDate = new Date("2023-12-24T00:00:00");
+  const targetDate = new Date("2024-01-28T00:00:00");
   // const NOW_IN_MS = new Date().getTime();
 
   // const dateTimeAfterThreeDays = targetDate.getTime() - NOW_IN_MS;
