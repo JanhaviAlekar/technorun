@@ -34,7 +34,7 @@ const Hero = () => {
           Where Every Step is a Celebration of Fitness and Innovation in the Heart of Amravati!
           
         </p>
-        <p>Save the Date: January 28, 2024
+        <p>Save the Date: 4th February, 2024
         <br />
           <b>Fees only 350 INR</b>
         </p>
